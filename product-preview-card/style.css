@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.container{
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+}
+.section-1{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-2{
+    width: 300px;
+    height: 450px;
+    text-align: left;
+}
+.content-box{
+    padding: 30px;
+    height: 390px;
+}
+.top{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+}
+h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    margin-bottom: 15px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.price-tag{
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    display: inline-block;
+    margin: 0;
+
+}
+.price-tag-strike{
+    font-family: 'Fraunces', serif;
+    text-decoration: line-through;
+    display: inline-block;
+    color: hsl(228, 12%, 48%);
+    position: relative;
+    top: -0.6em;
+    font-size: 13px;
+    margin-left: 15px;
+}
+.btn{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 13px 65px;
+    border-radius: 12px;
+}
+.btn:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 660px;
+    }
+    .container {
+        width: 90%;
+        height: 95%;
+        flex-direction: column;
+        margin: auto auto;
+    }
+    .section-1{
+        height: 40%;
+        width: 100%;
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+
+        background-image: url("./images/image-product-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .section-2{
+        height: 60%;
+        width: 100%;
+    }
+    .content-box{
+        padding-top: 20px;
+    }
+    .top{
+        margin-bottom: 10px;
+    }
+    .btn{
+        width: 100%;
+    }
+}
